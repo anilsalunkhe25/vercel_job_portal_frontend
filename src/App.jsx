@@ -18,56 +18,56 @@ import ProtectedRoute from './components/admin/ProtectedRoute'
 
 const appRouter = createBrowserRouter([
   {
-    path: '/',
+    path: 'https://vercel-job-portal-backend.vercel.app/',
     element: <Home />
   },
   {
-    path: '/login',
+    path: 'https://vercel-job-portal-backend.vercel.app/login',
     element: <Login />
   },
   {
-    path: '/signup',
+    path: 'https://vercel-job-portal-backend.vercel.app/signup',
     element: <Signup />
   },
   {
-    path: "/jobs",
+    path: "https://vercel-job-portal-backend.vercel.app/jobs",
     element: <Jobs />
   },
   {
-    path: "/description/:id",
+    path: "https://vercel-job-portal-backend.vercel.app/description/:id",
     element: <JobDescription />
   },
   {
-    path: "/browse",
+    path: "https://vercel-job-portal-backend.vercel.app/browse",
     element: <Browse />
   },
   {
-    path: "/profile",
+    path: "https://vercel-job-portal-backend.vercel.app/profile",
     element: <Profile />
   },
   // admin ke liye yha se start hoga
   {
-    path:"/admin/companies",
+    path:"https://vercel-job-portal-backend.vercel.app/admin/companies",
     element: <ProtectedRoute><Companies/></ProtectedRoute>
   },
   {
-    path:"/admin/companies/create",
+    path:"https://vercel-job-portal-backend.vercel.app/admin/companies/create",
     element: <ProtectedRoute><CompanyCreate/></ProtectedRoute> 
   },
   {
-    path:"/admin/companies/:id",
+    path:"https://vercel-job-portal-backend.vercel.app/admin/companies/:id",
     element:<ProtectedRoute><CompanySetup/></ProtectedRoute> 
   },
   {
-    path:"/admin/jobs",
+    path:"https://vercel-job-portal-backend.vercel.app/admin/jobs",
     element:<ProtectedRoute><AdminJobs/></ProtectedRoute> 
   },
   {
-    path:"/admin/jobs/create",
+    path:"https://vercel-job-portal-backend.vercel.app/admin/jobs/create",
     element:<ProtectedRoute><PostJob/></ProtectedRoute> 
   },
   {
-    path:"/admin/jobs/:id/applicants",
+    path:"https://vercel-job-portal-backend.vercel.app/admin/jobs/:id/applicants",
     element:<ProtectedRoute><Applicants/></ProtectedRoute> 
   },
 
